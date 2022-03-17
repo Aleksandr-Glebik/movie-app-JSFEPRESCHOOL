@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+}
+.header {
+  width: 100%;
+  height: 10rem;
+  background-color: #373b6a;
+}
+.header-container {
+  padding: 0 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__title {
+  font-size: 4rem;
+  line-height: 4rem;
+  color: black;
+  transition: all 0.7s;
+  font-family: "Nanum Gothic", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  cursor: pointer;
+}
+.header__title:hover {
+  color: white;
+  transform: scale(1.03);
+}
+.header__form-input {
+  width: 25rem;
+  height: 5rem;
+  border: none;
+  outline: none;
+  background-color: #373b6a;
+  border: 0.2rem solid #21254b;
+  border-radius: 1.5rem;
+  padding: 0.3rem 2rem;
+  font-size: 2rem;
+  line-height: 4rem;
+  color: #a7afff;
+  font-family: "Nanum Gothic", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  transition: all 0.6s;
+}
+.header__form-input::placeholder {
+  font-family: inherit;
+  color: #a7afff;
+}
+.header__form-input:hover {
+  color: #b3b9fc;
+  background-color: #474c88;
+  transform: scale(1.01);
+}
+.header__form-input:active {
+  color: #b3b9fc;
+  background-color: #474c88;
+  transform: scale(1.01);
+}
+.main {
+  width: 100%;
+  min-height: 110rem;
+  background-color: #21254b;
+}
+.main-container {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2.5rem 2.5rem;
+}
+.footer {
+  width: 100%;
+  height: 9rem;
+  background-color: #373b6a;
+}
+.footer-container {
+  padding: 0 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo {
+  width: 10rem;
+  transition: all 0.6s;
+}
+.footer__logo:hover {
+  transform: scale(1.1);
+}
+.footer__icon {
+  font-size: 4rem;
+  color: black;
+  transition: all 0.6s;
+}
+.footer__icon:hover {
+  color: white;
+  transform: scale(1.2);
+}
+.footer__text {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 4rem;
+  line-height: 4rem;
+  color: black;
+  transition: all 0.6s;
+}
+.footer__text:hover {
+  color: white;
+  transform: scale(1.1);
+}
+.element {
+  width: 26rem;
+  height: 52rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #474c88;
+  overflow: hidden;
+  position: relative;
+}
+.element-img {
+  width: 26rem;
+  height: 40rem;
+  position: center;
+  transition: all 0.7s;
+}
+.element-img:hover {
+  filter: saturate(200%);
+}
+.element-title {
+  width: 26rem;
+  height: 8rem;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  color: #b3b9fc;
+  font-family: "Nanum Gothic", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  padding: 1.5rem;
+  transition: all 0.7s;
+  overflow: hidden;
+}
+.element-title:hover {
+  color: white;
+  transform: scale(1.01);
+}
+.element-year {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #d5d8fc;
+  font-family: "Nanum Gothic", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0 1.5rem 1rem;
+  align-self: flex-end;
+  transition: all 0.7s;
+  overflow: hidden;
+}
+.element-year:hover {
+  color: rgb(253, 248, 102);
+  transform: scale(1.05);
+}
+.error {
+  width: 60rem;
+  height: 30rem;
+  margin: 6rem auto;
+  padding: 4rem;
+  background: linear-gradient(#373b6a, #a94949);
+  border: 1px solid #373b6a;
+  border-radius: 5rem;
+  transition: all 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+.error:hover {
+  transform: scale(1.01);
+}
+.error-text {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: rgb(225, 0, 0);
+  transition: all 0.3s;
+  position: absolute;
+  top: 5rem;
+  right: 5.5rem;
+}
+.error-icon {
+  font-family: "Font Awesome 5 Free";
+  width: 5rem;
+  height: 5rem;
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 900;
+  transition: all 0.3s;
+  color: rgb(225, 0, 0);
+}
+.fa-solid:before {
+  content: "\f071";
+}
+.error-icon:hover {
+  transform: scale(1.1);
+}
+.error-message {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #d5d8fc;
+  margin-top: 4rem;
+  transition: all 0.6s;
+}
+.error-message:hover {
+  color: white;
+}
+.button-getInfo {
+  width: 14rem;
+  height: 3.8rem;
+  border: none;
+  background-color: #2e3588;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0rem 2rem 0rem 0rem;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #d5d8fc;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.6s;
+}
+.button-getInfo:hover {
+  color: rgb(253, 248, 102);
+  transform: scale(1.05);
+}
+.container {
+  width: 1440px;
+  height: 80rem;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+}
+.container__media {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: flex-start;
+}
+.media-img {
+  width: 32rem;
+  margin: 0 3rem 3rem;
+}
+.media-inf__list {
+  list-style-type: none;
+  font-size: 3rem;
+  line-height: 5rem;
+  color: #d5d8fc;
+  font-family: "Nanum Gothic", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.media-inf__list-title {
+  font-size: 5rem;
+  line-height: 6.5rem;
+  font-weight: 700;
+  margin: 1rem 0 2rem;
+}
+.container__footer-text {
+  font-size: 3rem;
+  line-height: 5rem;
+  color: #d5d8fc;
+  font-family: "Nanum Gothic", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  padding: 0 3rem;
+}
+.media-inf__list-rating {
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  padding: 8rem 3rem 3rem 2.8rem;
+  position: absolute;
+  top: 0;
+  right: 0rem;
+  background-color: rgb(148, 151, 77);
+}
+.container__footer-btn {
+  width: 18rem;
+  height: 8rem;
+  padding: 1rem;
+  border: none;
+  position: absolute;
+  bottom: 0rem;
+  left: 0rem;
+  background-color: #373b6a;
+  cursor: pointer;
+  font-size: 2.6rem;
+  line-height: 4rem;
+  color: #d5d8fc;
+  font-family: "Nanum Gothic", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 0rem 4rem 0rem 0rem;
+  transition: all 0.4s;
+}
+.container__footer-btn:hover {
+  color: rgb(253, 248, 102);
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .container {
+    width: 1024px;
+    height: 90rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .container {
+    width: 768px;
+    height: 115rem;
+  }
+  .media-inf__list {
+    position: relative;
+  }
+  .media-inf__list-rating {
+    width: 20rem;
+    height: 9rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    position: static;
+    background-color: rgb(148, 151, 77);
+  }
+}
+@media screen and (max-width: 576px) {
+  .wrapper {
+    max-width: 576px;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .header {
+    height: 16rem;
+  }
+  .header-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__title {
+    padding-bottom: 2.2rem;
+  }
+  .container {
+    width: 576px;
+    height: 100%;
+  }
+  .container__media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .media-inf {
+    padding: 3rem;
+  }
+  .container__footer-text {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .wrapper {
+    max-width: 375px;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .container {
+    width: 375px;
+    height: 100%;
+  }
+  .container__media {
+    justify-content: center;
+    align-items: center;
+  }
+  .media-inf {
+    padding: 3rem;
+  }
+  .container__footer-text {
+    width: 100%;
+    height: 100%;
+  }
+}
